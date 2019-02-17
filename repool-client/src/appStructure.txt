@@ -1,0 +1,25 @@
+● src
++---● app
+|   +--● components
+|   |  +--● tasks
+|   |  |  |--tasks.component.ts|.html|.css
+|   |  |  +--● task
+|   |  |  |  |--task.component.ts|.html|.css
+|   |  |  |
+|   |  +--● catetories
+|   |     |--catetories.component.ts|.html|.css
+|   |     +--● catetory
+|   |        |--catetory.component.ts|.html|.css
+|   |
+|   +--● models
+|   |  |--task.model.ts
+|   |  |--catetory.model.ts
+|   |
+|   +--● services
+|   |  |--task.service.ts
+|   |  |--catetory.service.ts
+|   |
+|   |--app.module.ts
+|
++---● environments
+|   |--environment.ts (saved apiUrl)
