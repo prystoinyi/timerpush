@@ -7,9 +7,16 @@
 |   |  |  |  |--task.component.ts|.html|.css
 |   |  |  |
 |   |  +--● catetories
-|   |     |--catetories.component.ts|.html|.css
-|   |     +--● catetory
-|   |        |--catetory.component.ts|.html|.css
+|   |  |  |--catetories.component.ts|.html|.css
+|   |  |  +--● catetory
+|   |  |     |--catetory.component.ts|.html|.css
+|   |  |
+|   |  +--● user
+|   |     |--user.component.ts|.html|.css
+|   |     +--● registration
+|   |     |  |--registration.component.ts|.html|.css
+|   |     +--● login
+|   |        |--login.component.ts|.html|.css
 |   |
 |   +--● models
 |   |  |--task.model.ts
@@ -18,8 +25,14 @@
 |   +--● services
 |   |  |--task.service.ts
 |   |  |--catetory.service.ts
+|   |  |--user.service.ts
+|   |
+|   +--● auth
+|   |  |--auth.guard.ts
+|   |  |--auth.interceptor.ts
 |   |
 |   |--app.module.ts
+|   |--app-routing.module.ts (route configs.)
 |
 +---● environments
 |   |--environment.ts (saved apiUrl)
