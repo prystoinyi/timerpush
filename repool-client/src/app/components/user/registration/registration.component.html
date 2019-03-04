@@ -3,9 +3,11 @@
     <div class="form-group">
       <mat-form-field>
         <input formControlName="UserName" matInput placeholder="Username" required>
+        <mat-error>This field is mandatory.</mat-error>
       </mat-form-field>
       <mat-form-field>
-        <input formControlName="Email" matInput placeholder="Email">
+        <input formControlName="Email" matInput placeholder="Email" required>
+        <mat-error>Invalid email address.</mat-error>
       </mat-form-field>
       <mat-form-field>
         <input formControlName="FullName" matInput placeholder="Full Name">
@@ -13,9 +15,13 @@
       <div formGroupName="Passwords">
         <mat-form-field class="formPassword">
           <input formControlName="Password" matInput placeholder="Passwords" required>
+          <mat-error *ngIf="service.formModel.get('Passwords.Password').touched && service.formModel.get('Passwords.Password').errors?.required">This field is mandatory.</mat-error>
+          <mat-error *ngIf="service.formModel.get('Passwords.Password').touched && service.formModel.get('Passwords.Password').errors?.minlength">Minimum 4 characters required.></mat-error>
         </mat-form-field>
         <mat-form-field class="formPassword">
           <input formControlName="ConfirmPassword" matInput placeholder="Confirm Password" required>
+          <mat-error *ngIf="service.formModel.get('Passwords.ConfirmPassword').touched && service.formModel.get('Passwords.ConfirmPassword').errors?.required">This field is mandatory.</mat-error>
+          <mat-error *ngIf="service.formModel.get('Passwords.ConfirmPassword').touched && service.formModel.get('Passwords.ConfirmPassword').errors?.passwordMismatch">Confirm Password does not match.</mat-error>
         </mat-form-field>
       </div>
     </div>
