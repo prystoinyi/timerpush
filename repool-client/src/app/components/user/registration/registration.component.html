@@ -1,3 +1,26 @@
-<p>
-  registration works!
-</p>
+<div class="container">
+  <form [formGroup]="service.formModel" autocomplete="off" class="normal-form">
+    <div class="form-group">
+      <mat-form-field>
+        <input formControlName="UserName" matInput placeholder="Username" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input formControlName="Email" matInput placeholder="Email">
+      </mat-form-field>
+      <mat-form-field>
+        <input formControlName="FullName" matInput placeholder="Full Name">
+      </mat-form-field>
+      <div formGroupName="Passwords">
+        <mat-form-field class="formPassword">
+          <input formControlName="Password" matInput placeholder="Passwords" required>
+        </mat-form-field>
+        <mat-form-field class="formPassword">
+          <input formControlName="ConfirmPassword" matInput placeholder="Confirm Password" required>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="button-row">
+      <button mat-raised-button color="primary" type="submit" [disabled]="service.formModel.invalid">Sign Up</button>
+    </div>
+  </form>
+</div>

@@ -1,2 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* .container {
+    display: flex;
+    flex-direction: column;
+} */
+
+form.normal-form{
+    margin: 10px;
+}
+
+.form-group{
+    padding: 5%;    
+}
+
+.form-group > * {
+    width: 100%;
+    }
+
+.formPassword {
+    width: 100%;
+}

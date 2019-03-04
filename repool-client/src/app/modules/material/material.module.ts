@@ -6,11 +6,17 @@ import * as Material from "@angular/material";
   imports: [
     CommonModule,
     Material.MatTabsModule,
-    Material.MatToolbarModule
+    Material.MatToolbarModule,
+    Material.MatFormFieldModule,
+    Material.MatInputModule,
+    Material.MatButtonModule
   ],
   exports: [
     Material.MatTabsModule,
-    Material.MatToolbarModule
+    Material.MatToolbarModule,
+    Material.MatFormFieldModule,
+    Material.MatInputModule,
+    Material.MatButtonModule
   ],
   declarations: []
 })
