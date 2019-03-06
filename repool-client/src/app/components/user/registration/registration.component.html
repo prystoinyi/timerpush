@@ -1,5 +1,5 @@
 <div class="container">
-  <form [formGroup]="service.formModel" autocomplete="off" class="normal-form">
+  <form [formGroup]="service.formModel" autocomplete="off" class="normal-form" (submit)="onSubmit()">
     <div class="form-group">
       <mat-form-field>
         <input formControlName="UserName" matInput placeholder="Username" required>

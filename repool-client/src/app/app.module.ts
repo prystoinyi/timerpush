@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from "@angular/common/http";
+import { ToastrModule } from 'ngx-toastr';
 
 import { AppComponent } from './app.component';
 import { UserComponent } from './components/user/user.component';
@@ -23,7 +25,9 @@ import { UserService } from './services/user.service';
     BrowserAnimationsModule,
     MaterialModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    ToastrModule.forRoot()
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
