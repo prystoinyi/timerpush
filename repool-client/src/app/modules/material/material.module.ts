@@ -9,14 +9,16 @@ import * as Material from "@angular/material";
     Material.MatToolbarModule,
     Material.MatFormFieldModule,
     Material.MatInputModule,
-    Material.MatButtonModule
+    Material.MatButtonModule,
+    Material.MatIconModule
   ],
   exports: [
     Material.MatTabsModule,
     Material.MatToolbarModule,
     Material.MatFormFieldModule,
     Material.MatInputModule,
-    Material.MatButtonModule
+    Material.MatButtonModule,
+    Material.MatIconModule
   ],
   declarations: []
 })

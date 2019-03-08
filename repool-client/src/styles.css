@@ -21,3 +21,17 @@ form.normal-form{
 .formPassword {
     width: 100%;
 }
+
+.cust-button {
+    width: 50%;
+}
+
+.button-row {
+    text-align: center;
+}
+
+.image {
+    text-align: center;
+    padding-top: 2.5px;
+}
+
