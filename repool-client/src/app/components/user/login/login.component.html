@@ -1,7 +1,7 @@
 <div class="image">
   <img src="../../../../assets/img/single_user.png">
 </div>
-<form #form='ngForm' autocomplete="off" class="normal-form">
+<form #form='ngForm' autocomplete="off" class="normal-form" (submit)="onSubmit(form)">
   <div class="form-group">
     <mat-form-field>
       <input #UserName='ngModel' name="UserName" [(ngModel)]="formModel.UserName" matInput placeholder="Username"
