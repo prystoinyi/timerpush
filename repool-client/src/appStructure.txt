@@ -12,11 +12,14 @@
 |   |  |     |--catetory.component.ts|.html|.css
 |   |  |
 |   |  +--● user
-|   |     |--user.component.ts|.html|.css
-|   |     +--● registration
-|   |     |  |--registration.component.ts|.html|.css
-|   |     +--● login
-|   |        |--login.component.ts|.html|.css
+|   |  |  |--user.component.ts|.html|.css
+|   |  |  +--● registration
+|   |  |  |  |--registration.component.ts|.html|.css
+|   |  |  +--● login
+|   |  |     |--login.component.ts|.html|.css
+|   |  |
+|   |  +--● home
+|   |     |--home.component.ts|.html|.css
 |   |
 |   +--● models
 |   |  |--task.model.ts
