@@ -1,5 +1,23 @@
-<mat-toolbar color="primary">
-  <span>My Application</span>
-  <span class="example-spacer"></span>
-  <button mat-flat-button color="warn" (click)="onLogout()">Logout</button>
+<mat-toolbar>
+    <button mat-button>
+        <mat-icon>add</mat-icon>
+        NEW
+    </button>
+    <button mat-button>
+        <mat-icon>visibility</mat-icon>
+        ACTIVATE
+    </button>
+    <button mat-button>
+        <mat-icon>visibility_off</mat-icon>
+        DEACTIVATE
+    </button>
+    <span class="example-spacer"></span>
+    <div class="serch-div">
+        <mat-form-field class="serch-form-field">
+            <input matInput [(ngModel)]="serchKey" placeholder="Serch" autocomplete="off">
+            <button mat-button matSuffix mat-icon-button aria-label="Clear">
+                <mat-icon>close</mat-icon>
+            </button>
+        </mat-form-field>
+    </div>
 </mat-toolbar>

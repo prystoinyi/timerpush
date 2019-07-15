@@ -15,5 +15,9 @@ namespace repool_server.Models
         }
 
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
+
+        public DbSet<TaskModel> TaskModels { get; set; }
+
+        public DbSet<ItemModel> ItemModels { get; set; }
     }
 }

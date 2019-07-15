@@ -1,0 +1,19 @@
+@import '~@angular/material/theming';
+
+@import "./open-sans.scss";
+
+$custom-typography: mat-typography-config(
+  $font-family: 'Open Sans, sans-serif'
+);
+
+@include mat-core($custom-typography);
+
+@import "./palette.scss";
+
+$primary: mat-palette($mat-black, 900);
+$accent:  mat-palette($mat-deep-orange, 500, A100, A400);
+$warn:    mat-palette($mat-red, 600);
+
+$theme: mat-light-theme($primary, $accent, $warn);
+
+@include angular-material-theme($theme);

@@ -46,4 +46,8 @@ export class UserService {
   login(formData) {
     return this.http.post(this.BaseURL + '/ApplicationUser/Login', formData);
   }
+
+  isLogined() {
+    return localStorage.getItem('token') != null;
+  }
 }

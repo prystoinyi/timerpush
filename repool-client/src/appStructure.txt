@@ -11,15 +11,24 @@
 |   |  |  +--● catetory
 |   |  |     |--catetory.component.ts|.html|.css
 |   |  |
+|   |  +--● home
+|   |  |  |--home.component.ts|.html|.css
+|   |  |
+|   |  +--● navigation
+|   |  |  +--● header
+|   |  |  |  |--header.component.ts|.html|.css
+|   |  |  +--● sidenav-list
+|   |  |  |  |--sidenav-list.component.ts|.html|.css
+|   |  |  +--● sidebar
+|   |  |     |--sidebar.component.ts|.html|.css
+|   |  |
 |   |  +--● user
 |   |  |  |--user.component.ts|.html|.css
 |   |  |  +--● registration
 |   |  |  |  |--registration.component.ts|.html|.css
 |   |  |  +--● login
 |   |  |     |--login.component.ts|.html|.css
-|   |  |
-|   |  +--● home
-|   |     |--home.component.ts|.html|.css
+|   |
 |   |
 |   +--● models
 |   |  |--task.model.ts
